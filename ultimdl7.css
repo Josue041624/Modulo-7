@@ -1,0 +1,253 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-image: url(cuerpo.jpg);
+}
+
+header {
+  display: flex;  
+  color: #f3f3f3;
+  align-items: center; 
+  justify-content: center;  
+  padding: 1rem;
+  text-align: center; 
+  background-image: url(head1.jpg);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 180%;
+}
+
+header img {
+  margin-right: 10px; 
+  border-radius: 150%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 0.5rem;
+}
+.nav-item {
+  position: relative;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.829);
+  color: #333;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 200px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.nav-item:hover .dropdown-content {
+  display: block;
+}
+
+
+.gallery-rotating {
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+  width: 250%;
+  height: 400px;
+  margin-top: 2rem;
+}
+
+.section-wrapper h2 {
+  text-align: center;
+}
+
+
+.gallery-rotating img {
+  width: 450px; 
+  height: 350px;
+  border-radius: 5px;
+}
+
+.section-wrapper {
+  margin: 3rem auto;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 10rem;
+}
+
+.container-sections {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+.section {
+  flex: 1;
+  min-width: 300px; 
+}
+
+
+.container-sections {
+  padding: 0 20px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  margin-top: 5rem;
+}
+
+
+.section#informacion {
+  background-color: #f7f7f7c4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.section#nosotros {
+  background-color: #f3f3f3c7;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #a0ffa4e3; 
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.button:hover {
+  background-color: #b37211a1; 
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); 
+}
+
+
+
+.section#informacion {
+  background-color: #f7f7f7c4;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  max-height: 600px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.section#informacion h2 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.section#informacion ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.section#informacion li {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.section#nosotros {
+  background-color: #f3f3f3c7;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.section#nosotros h2 {
+  font-size: 1.6em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section#nosotros p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.section#nosotros ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.section#nosotros li {
+  margin-bottom: 10px;
+}
+
+.section#nosotros h2:nth-of-type(2) {
+  margin-top: 30px;
+}
+
+
+.section#encargos {
+  background-color: #e8f4f8af;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.section#encargos h2 {
+  font-size: 1.6em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.section#encargos p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
